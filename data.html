@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<title>Donar Data</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="https://t4.ftcdn.net/jpg/03/02/20/53/360_F_302205360_XRk6bfuiRjY6Fr559XU8m50cjQt35h9T.jpg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script>
+var myObject= {"customers":[
+{"CustomerName" : "Shashank","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "8688799520"},
+{"CustomerName" : "Keerthan","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "8688098765"},
+{"CustomerName" : "Sai Kumar","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9876565678"},
+{"CustomerName" : "Mohit","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9081761235"},
+{"CustomerName" : "Ravi Chandra","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9876789678"},
+{"CustomerName" : "Nithin","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9876252366"},
+{"CustomerName" : "Vishal","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "7896546789"},
+{"CustomerName" : "Sandeep","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9876509875"},
+{"CustomerName" : "Shashank.N","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9490133724"},
+{"CustomerName" : "Vinod","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "8907896253"},
+{"CustomerName" : "Venkat","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9809982790"},
+{"CustomerName" : "Sagar","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "6567828939"},
+{"CustomerName" : "Zuhair","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "7868577423"},
+{"CustomerName" : "Hemanth","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "8788765243"},
+{"CustomerName" : "Puneeth","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9087678935"},
+{"CustomerName" : "Rohan","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "7892372377"},
+{"CustomerName" : "Dinesh","City" : "Hyderabad","Blood Group" : "B+","Phone Number" : "9087526347"}
+]};
+</script>
+<body class="w3-container">
+
+<h2>Donar Data In Hyderabad</h2>
+
+<table id="id01" class="w3-table-all">
+  <tr>
+    <th>Customer</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Phone Number</th>
+  </tr>
+  <tr w3-repeat="customers">
+    <td>{{CustomerName}}</td>
+    <td>{{City}}</td>
+    <td>{{Blood Group}}</td>
+    <td>{{Phone Number}}</td>
+  </tr>
+</table>
+
+<script>
+w3.displayObject("id01", myObject);
+</script>
+
+</body>
+</html> 

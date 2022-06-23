@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Blood Donation</title>
+<link rel="icon" type="image/x-icon" href="https://t4.ftcdn.net/jpg/03/02/20/53/360_F_302205360_XRk6bfuiRjY6Fr559XU8m50cjQt35h9T.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 4px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="home.html" class="w3-bar-item w3-button">Donate Blood Save Life</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#feedback" class="w3-bar-item w3-button">Feedback</a>
+      <a href="needblood.html" class="w3-bar-item w3-button">Need Blood</a>
+      <a href="donateblood1.html" class="w3-bar-item w3-button">Donate Blood</a>
+    </div>
+  </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Donar Registration Form</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title" align="center">Select Blood Group and Location</h2>
+                    <form method="POST">
+                        
+                        <div class="input-group">
+                            <label class="label">Blood Group</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="bloodgroup">
+                                    <option disabled="disabled" selected="selected">Choose blood group</option>
+                                    <option value="A+">A+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Area</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="area">
+                                    <option disabled="disabled" selected="selected">Choose area</option>
+                                    <option >Delhi</option>
+                                    <option >Mumbai</option>
+                                    <option >Hyderabad</option>
+                                    <option >Lucknow</option>
+                                    <option >Vishakapatnam</option>
+                                    <option >Chennai</option>
+                                    <option >Banglore</option>
+                                    <option >Goa</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="p-t-15">
+                                      <a href="data.html" class="btn btn--radius-2 btn--blue">Submit
+                                      </a>
+                                   </div>
+                                </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>

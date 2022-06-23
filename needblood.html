@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Need Blood</title>
+<link rel="icon" type="image/x-icon" href="https://t4.ftcdn.net/jpg/03/02/20/53/360_F_302205360_XRk6bfuiRjY6Fr559XU8m50cjQt35h9T.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="home.html" class="w3-bar-item w3-button">Donate Blood Save Life</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="home.html#about" class="w3-bar-item w3-button">About</a>
+      <a href="home.html#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="home.html#feedback" class="w3-bar-item w3-button">Feedback</a>
+      <a href="donateblood1.html" class="w3-bar-item w3-button">Donate Blood</a>
+    </div>
+  </div>
+</div>
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="frontImg.jpg" alt="">
+        <div class="text">
+         
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="frontImg.jpg" alt="">
+        <div class="text">
+         
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="login1.php" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" name="email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" name="password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="signup.php" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your name" id="name" name="name" required >
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" id="email" name="email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" id="password" name="password" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Re-Enter your password" id="confirm_password" name="password1" required>
+              </div>
+              <script type="text/javascript">
+                var password = document.getElementById("password")
+                , confirm_password = document.getElementById("confirm_password");
+
+                  function validatePassword(){
+                    if(password.value != confirm_password.value) {
+                      confirm_password.setCustomValidity("Passwords Don't Match");
+                    } else {
+                      confirm_password.setCustomValidity('');
+                    }
+                  }
+
+                  password.onchange = validatePassword;
+                  confirm_password.onkeyup = validatePassword;
+              </script>
+              <div class="input-box">
+                <i class="fas fa-mobile"></i>
+                <input type="text" placeholder="Enter your mobile number" id="number" name="number" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-thumbtack"></i>
+                <input type="text" placeholder="Enter your area" id="area" name="area" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
